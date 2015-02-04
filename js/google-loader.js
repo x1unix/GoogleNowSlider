@@ -1,10 +1,15 @@
-function googleSlider(){}
+function googleSlider(){
+	console.log("Google Now Slider [1.01]");
+	console.log("2014 (c) Denis Sedchenko");
+	
+}
 
 //Properties
 googleSlider.colors			= ["#0089FA","#FF002B","#FFA900","#00A753"];
 googleSlider.index 			= 0;
 googleSlider.sliding 		= undefined;
 googleSlider.background 	= "#ffffff";
+googleSlider.version            = "1.01";
 
 //Events
 googleSlider.onSlideEnd 	= function(){};
@@ -39,5 +44,6 @@ googleSlider.slide 	= function(end)
 
 	},700);	
 }
+googleSlider();
 googleSlider.start = function(){googleSlider.slide();googleSlider.onSlideBegin();googleSlider.sliding = setInterval(function(){googleSlider.slide()},1000);}
 googleSlider.stop  = function(){clearInterval(googleSlider.sliding); setTimeout(function(){googleSlider.slide(true);},700);}
