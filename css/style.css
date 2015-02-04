@@ -33,7 +33,7 @@ a{
 	max-width: 490px;
 	margin: 0px auto;
 	height:100%;
-	background-image: url("../img/top.png");
+	background-image: url("top.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
