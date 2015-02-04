@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/google-loader.css" />
+		<script type="text/javascript" src="js/google-loader.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,400italic' rel='stylesheet' type='text/css' />
+		<script type="text/javascript">
+		googleSlider.background = "#E5E5E5";
+		function slide(mode){
+			if(mode == true)
+			{
+				googleSlider.start();
+				document.getElementById("start").innerHTML = "<i class=\"gray\" onclick=\"slide(false);\">Click <u>here</u> to stop slider</i>";
+			}
+			else
+			{
+				googleSlider.stop();
+				document.getElementById("start").innerHTML = "<i class=\"gray\" onclick=\"slide(true);\">Click <u>here</u> to try slider</i>";
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<div id="logo"></div>
+		</div>
+		<div class="block">
+			<div id="google-slider">
+				<div id="gslider"></div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="item" id="start">
+			<i class="gray">Click <u onclick="slide(true);">here</u> to try slider</i>
+			</div>
+		</div>
+		<div class="block">
+			<div class="item">
+				<h2>Setup</h2>
+				<p>First insert this HTML code to your web page, where slidebar should be:</p>
+				<div class="code">
+&lt;div id="google-slider"&gt;<br />
+	&lt;div id="gslider"&gt;&lt;/div&gt;<br />
+&lt;/div&gt;
+				</div>
+				<p>After, put this code inside <u>&lt;head&gt;</u> tag:</p>
+				<div class="code">
+&lt;link rel="stylesheet" type="text/css" href="css/google-loader.css" /&gt;<br />
+&lt;script type="text/javascript" src="js/google-loader.js"&gt;&lt;/script&gt;
+				</div>
+			</div>
+		</div>
+		<div class="block">
+			<div class="item">
+				<h2>Download</h2>
+				<p>Google Now Slider is licensed under MIT license and free for <a href="Google-NowSlider.zip" target="_blank" title="Download Now">download</a>.</p>
+			</div>
+		</div>
+		<div class="block">
+			<div class="item">
+				<h2>Usage</h2>
+				<p>You can configure and manage Google Slider using JavaScript inside your pages</p>
+				<br />
+				<p>Enable loop sliding:</p>
+				<div class="code">
+googleSlider.start();
+				</div>
+				<p>Stop slider:</p>
+				<div class="code">
+googleSlider.stop();
+				</div>
+				<p>Change slider background (<u>white</u> by default):</p>
+				<div class="code">
+googleSlider.background = "#ffffff";
+				</div>
+				<p>Change slider colors:</p>
+				<div class="code">
+googleSlider.colors = ["#0089FA","#FF002B","#FFA900","#00A753"];
+				</div>
+
+			</div>
+		</div>
+		<div class="block">
+			<div class="item">
+				<h2>Events</h2>
+				<ul>
+					<li><u>googleSlider.onSlideBegin</u> - Starts when slider is started</li>
+					<li><u>googleSlider.onSliding</u> - Starts at each slide</li>
+					<li><u>googleSlider.onSlideEnd</u> - Starts when slider is stopped</li>
+				</ul>
+			</div>
+		</div>
+		<div id="foot">2014 - 2015, Google Now Slider &copy; by <a href="http://sedchenko.tk" target="_blank">Denis Sedchenko</a></div> 
+	</body>
+</html>
