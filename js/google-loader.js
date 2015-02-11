@@ -40,10 +40,10 @@ googleSlider.slide 	= function(end)
 				{
 					googleSlider.index = 0;
 				}
-				if(end == true){googleSlider.onSlideEnd();}else{googleSlider.onSliding();}
+				if(end == true){}else{googleSlider.onSliding();}
 
 	},700);	
 }
 googleSlider();
 googleSlider.start = function(){googleSlider.slide();googleSlider.onSlideBegin();googleSlider.sliding = setInterval(function(){googleSlider.slide()},1000);}
-googleSlider.stop  = function(){clearInterval(googleSlider.sliding); setTimeout(function(){googleSlider.slide(true);},700);}
+googleSlider.stop  = function(){clearInterval(googleSlider.sliding); googleSlider.onSlideEnd(); setTimeout(function(){googleSlider.slide(true);},700);}
