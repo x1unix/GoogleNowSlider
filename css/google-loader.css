@@ -7,10 +7,10 @@
 }
 #google-slider div
 {
-	-webkit-transition: width 0.7s ease 0s;
-	-o-transition: width 0.7s ease 0s;
-	-moz-transition: width 0.7s ease 0s;
-	transition: width 0.7s ease 0s;
+	-webkit-transition: width 0.6s ease 0s;
+	-o-transition: width 0.6s ease 0s;
+	-moz-transition: width 0.6s ease 0s;
+	transition: width 0.6s ease 0s;
 	margin:0px auto;
 	height:100%;
 	width: 0%;
